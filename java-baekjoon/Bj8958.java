@@ -8,16 +8,18 @@ public class Bj8958 {
         int gameCnt = sc.nextInt();
         int[] scoreArr = new int[gameCnt];
         int score = 0;
+        String answer = sc.next();
+        int answerLength = 0;
 
-        for(int i = 0; i < gameCnt; i++){
-            String answer = sc.next();
+        for(int i = 0; i < answer.length(); i++){
             if(answer.charAt(i) == 'O') {
                 score++;
-                scoreArr[i] += score;
+                scoreArr[answerLength] += score;
             }
             else{
                 score = 0;
             }
+            answerLength++;
         }
 
         for (int i = 0; i < scoreArr.length; i++) {
