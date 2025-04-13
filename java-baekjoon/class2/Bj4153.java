@@ -1,4 +1,4 @@
-// 직각삼각형d
+// 직각삼각형
 import java.util.*;
 
 public class Bj4153 {
@@ -15,7 +15,7 @@ public class Bj4153 {
             if(auset == 0 && ausar == 0 && heru == 0) break;
 
             else if(auset*auset + ausar*ausar == heru*heru){
-                answer.add("rigth");
+                answer.add("right");
             }
             else answer.add("wrong");
         }
