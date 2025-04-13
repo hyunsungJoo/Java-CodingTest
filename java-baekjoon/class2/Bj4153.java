@@ -1,4 +1,4 @@
-// 직각삼각형
+// 직각삼각형d
 import java.util.*;
 
 public class Bj4153 {
