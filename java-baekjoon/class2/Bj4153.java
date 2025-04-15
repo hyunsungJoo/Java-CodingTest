@@ -14,7 +14,9 @@ public class Bj4153 {
 
             if(auset == 0 && ausar == 0 && heru == 0) break;
 
-            else if(auset*auset + ausar*ausar == heru*heru){
+            else if((auset * auset + ausar * ausar == heru * heru) ||
+            (auset * auset + heru * heru == ausar * ausar) ||
+            (ausar * ausar + heru * heru == auset * auset)){
                 answer.add("right");
             }
             else answer.add("wrong");
