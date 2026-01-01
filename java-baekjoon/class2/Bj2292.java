@@ -1,3 +1,4 @@
+// 벌집
 import java.util.*;
 
 public class Bj2292 {
