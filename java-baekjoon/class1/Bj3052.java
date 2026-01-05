@@ -5,19 +5,19 @@ public class Bj3052 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        int[] mod = new int[10];
-        int div = 42;
+        ArrayList<Integer> list = new ArrayList<>();
 
         for(int i = 0; i < 10; i++){
-            int num = sc.nexInt();
-            mod[0] += num % 42;
-        }
-        
-        for(int i = 0; i < 10; i++){
-            int num = sc.nexInt();
-            mod[0] += num % 42;
+            int num = sc.nextInt();
+            int mod = num % 42;
+
+            // 중복이 아니면 추가
+            if (!list.contains(mod)) {
+                list.add(mod);
+            }
         }
 
-    }
-    
+        // 서로 다른 나머지 개수 출력
+        System.out.println(list.size());
+    }    
 }
