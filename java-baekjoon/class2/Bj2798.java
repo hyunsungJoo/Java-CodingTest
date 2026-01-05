@@ -8,21 +8,30 @@ N 크기	O(N³) 가능 여부
 */
 import java.util.*;
 
-public class Bj2798 {
-    public static void main(String args[]){
-      Scanner sc = new Scanner(System.in);
-      int cardCount = sc.nextInt();
-      int max = sc.nextInt();
-      int[] cardNum = new int[cardCount];
-      
-      int n = 0;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-      while(n < cardNum.length){
-        cardNum[n] = sc.nextInt();
-      }
+        int count = sc.nextInt();
+        int total = sc.nextInt();
+        int[] num = new int[count];
+        int answer = 0;
+        
+        for(int i = 0; i < count; i++){
+            num[i] = sc.nextInt();
+        }
 
-
-
-  }
-  
+        for(int i = 0; i < num.length; i++){
+            for(int j = i+1; j < num.length; j++ ){
+                for(int k = j+1; k < num.length; k++){
+                    int answer2 = num[i] + num[j] + num[k];
+                    if(total - answer > total - answer2 && answer2 <= total){
+                        answer = answer2;
+                    }
+                }
+            }
+        }
+        System.out.println(answer);
+        
+    }
 }
