@@ -8,7 +8,7 @@ public class Bj2775 {
 
         int count = Integer.parseInt(br.readLine());
 
-        int[][] personNum = new int[14][14];
+        int[][] personNum = new int[15][14];
         int total = 0;
 
         for(int i = 0; i < personNum[0].length; i++){
@@ -28,8 +28,5 @@ public class Bj2775 {
             int roomNum = Integer.parseInt(br.readLine());
             System.out.println(personNum[floor][roomNum - 1]);
         }
-
-
-
     }
 }
