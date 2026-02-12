@@ -5,7 +5,7 @@ public class Bj2775 {
     public static void main(String args[]) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
+        
         int count = Integer.parseInt(br.readLine());
 
         int[][] personNum = new int[15][14];

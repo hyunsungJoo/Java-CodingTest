@@ -4,10 +4,12 @@ import java.io.*;
 public class Bj2869 {
     public static void main (String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int up = Integer.parseInt(br.readLine());
-        int down = Integer.parseInt(br.readLine());
-        int end = Integer.parseInt(br.readLine());
+
+        int up = Integer.parseInt(st.nextToken());
+        int down = Integer.parseInt(st.nextToken());
+        int end = Integer.parseInt(st.nextToken());
 
         int now = 0;
         int day = 0;
